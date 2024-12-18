@@ -13,7 +13,7 @@ if (file_exists($fetcherJsonCacheFile) && (filemtime($fetcherJsonCacheFile) + $f
   $fetcherJson = file_get_contents($fetcherJsonCacheFile);
 } else {
 
-  $fetcherJson = @file_get_contents('https://tplayapi.code-crafters.app/321codecrafters/fetcher.json');
+  $fetcherJson = @file_get_contents('https://ayna-api.iptvbd.xyz/api/aynaott.json');
   if ($fetcherJson !== false) {
     file_put_contents($fetcherJsonCacheFile, $fetcherJson);
   } else {
